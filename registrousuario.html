@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Actividad 2.4.2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 30px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 8px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 3px;
+        }
+        .botones {
+            display: flex;
+            justify-content: space-between;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="reset"] {
+            background-color: #999;
+        }
+        input[type="submit"]:hover {
+            background-color: #005fa3;
+        }
+        input[type="reset"]:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formulario de contacto - Actividad 2.4.2</h2>
+
+    <form action="mailto:tu_usuario@educa.madrid.org" method="POST" enctype="text/plain">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color_favorito">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+
+            <p>¿Qué medio prefieres para comunicarte?</p>
+            <label><input type="radio" name="medio_comunicacion" value="email" checked> Email</label>
+            <label><input type="radio" name="medio_comunicacion" value="telefono"> Teléfono</label>
+            <label><input type="radio" name="medio_comunicacion" value="whatsapp"> WhatsApp</label>
+
+            <p>Selecciona tus intereses:</p>
+            <label><input type="checkbox" name="interes" value="tecnologia"> Tecnología</label>
+            <label><input type="checkbox" name="interes" value="musica"> Música</label>
+            <label><input type="checkbox" name="interes" value="deporte"> Deporte</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Otros campos (HTML5)</legend>
+
+            <label for="url">Página web personal:</label>
+            <input type="url" id="url" name="pagina_web">
+
+            <label for="rango">Nivel de satisfacción (1-10):</label>
+            <input type="range" id="rango" name="satisfaccion" min="1" max="10">
+
+            <label for="archivo">Sube un archivo:</label>
+            <input type="file" id="archivo" name="archivo">
+
+            <label for="hora">Hora preferida de contacto:</label>
+            <input type="time" id="hora" name="hora_contacto">
+
+            <label for="buscar">Buscar palabra clave:</label>
+            <input type="search" id="buscar" name="busqueda">
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios adicionales</legend>
+            <textarea name="comentarios" rows="4" placeholder="Escribe aquí tus comentarios..."></textarea>
+        </fieldset>
+
+        <div class="botones">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar todo">
+        </div>
+
+    </form>
+
+</body>
+</html>
