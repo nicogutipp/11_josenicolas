@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+   <meta charset="UTF-8">
+   <title>Formulario Básico</title>
+</head>
+
+
+<body>
+
+
+   <h2>Formulario Básico</h2>
+
+
+   <form action="procesar.php" method="get">
+
+
+       <fieldset>
+           <legend>Personaje</legend>
+
+
+           <label for="superheroe">Superhéroe favorito</label>
+           <select name="superheroe" id="superheroe">
+               <option value="">Elige superhéroe</option>
+               <option value="ironman">Iron Man</option>
+               <option value="hulk">The Hulk</option>
+           </select>
+           <br><br>
+
+
+           <label for="color">Color</label>
+           <input type="color" id="color" name="color" value="#3399ff">
+       </fieldset>
+
+
+       <fieldset>
+           <legend>Datos de contacto</legend>
+
+
+           <label for="nombre">Nombre</label>
+           <input type="text" id="nombre" name="nombre">
+           <br><br>
+
+
+           <label for="telefono">Teléfono</label>
+           <input type="tel" id="telefono" name="telefono" pattern="[0-9]{7}" placeholder="9999999">
+           <small>Formato: 9999999</small>
+       </fieldset>
+
+
+
+
+       <input type="submit" value="Enviar">
+
+
+   </form>
+
+
+</body>
+
+
+</html>
+
