@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    color: #00bcd4;
+}
+
+h2 {
+    color: #d63384;
+}
+
+h3 {
+    color: #800080;
+}
+
+code {
+    color: #009688;
+}
+
+.rosa {
+    color: #e91e63;
+}
+
+#mayusculas {
+    text-transform: uppercase;
+    color: #8bc34a;
+}
+
+b {
+    font-weight: bold;
+}
