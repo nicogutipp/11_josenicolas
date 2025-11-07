@@ -1,0 +1,129 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #fff;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* ======== HEADER ======== */
+header {
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    flex: 1;
+}
+
+/* ======== MENÚ DE NAVEGACIÓN ======== */
+nav {
+    background-color: pink;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+/* ======== SECCIÓN PRINCIPAL ======== */
+section {
+    background-color: #ffe0e0;
+    padding: 10px;
+}
+
+main {
+    width: 70%;
+    float: left;
+}
+
+article {
+    background-color: #d56a8b;
+    color: #1a1a1a;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #3b0a24;
+}
+
+/* ======== BARRA LATERAL ======== */
+aside {
+    width: 25%;
+    float: right;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside li {
+    background-color: #8a2be2;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* ======== FOOTER ======== */
+footer {
+    clear: both;
+    background-color: #666;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+address {
+    font-style: italic;
+}
